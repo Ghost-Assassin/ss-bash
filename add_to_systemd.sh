@@ -20,7 +20,7 @@ After=network.target
 
 [Service]
 User=root
-Type=simple
+Type=forking
 WorkingDirectory=$(pwd)
 ExecStart=$(pwd)/ssadmin.sh start
 ExecStop=$(pwd)/ssadmin.sh stop
