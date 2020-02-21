@@ -23,6 +23,7 @@ User=root
 Type=simple
 WorkingDirectory=$(pwd)
 ExecStart=$(pwd)/ssadmin.sh start
+ExecStop=$(pwd)/ssadmin.sh stop
 
 [Install]
 WantedBy=multi-user.target
